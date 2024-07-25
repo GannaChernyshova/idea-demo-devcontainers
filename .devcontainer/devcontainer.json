@@ -1,0 +1,10 @@
+{
+	"name": "idea-demo",
+	"image": "openjdk:11",
+	"containerEnv": {
+		"TC_CLOUD_TOKEN": "your_tcc_token",
+	},
+	"postStartCommand": "bash ./install-tcc-agent.sh"
+}
+
+
