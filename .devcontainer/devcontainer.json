@@ -4,7 +4,7 @@
 	"containerEnv": {
 		"TC_CLOUD_TOKEN": "${localEnv:TC_CLOUD_TOKEN}",
 	},
-	"postStartCommand": "bash ./install-tcc-agent.sh"
+	"postStartCommand": "bash -c 'source .env && ./install-tcc-agent.sh'"
 }
 
 
