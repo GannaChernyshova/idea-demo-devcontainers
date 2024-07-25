@@ -1,6 +1,9 @@
 {
 	"name": "idea-demo",
 	"image": "openjdk:11",
+	"mounts": [
+		"source=${localWorkspaceFolder}/.env,target=/workspace/.env,type=bind"
+	],
 	"containerEnv": {
 		"TC_CLOUD_TOKEN": "${localEnv:TC_CLOUD_TOKEN}",
 	},
