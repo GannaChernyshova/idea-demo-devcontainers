@@ -1,8 +1,8 @@
 {
 	"name": "idea-demo",
-	"image": "openjdk:11",
+	"image": "mcr.microsoft.com/devcontainers/java:21",
 	"containerEnv": {
-		"TC_CLOUD_TOKEN": "${localEnv:TC_CLOUD_TOKEN}",
+		"TC_CLOUD_TOKEN": "${TC_CLOUD_TOKEN}",
 	},
 	"postStartCommand": "bash ./install-tcc-agent.sh"
 }
