@@ -1,15 +1,11 @@
 {
 	"name": "idea-demo",
 	"image": "mcr.microsoft.com/devcontainers/java:21",
-//	"runArgs": ["--env-file",".devcontainer/devcontainer.env"],
-	"remoteEnv": {
-		"TC_CLOUD_TOKEN": "${localEnv:TC_CLOUD_TOKEN}",
-		"PATH": "${containerEnv:PATH}"
-	},
+	"runArgs": ["--env-file","/Users/annachernysheva/Work/Docker/SE/idea-demo-devcontainers/.devcontainer/devcontainer.env"],
 	"containerEnv": {
 		"TC_CLOUD_TOKEN": "${localEnv:TC_CLOUD_TOKEN}",
 	},
 	"postStartCommand": "bash ./install-tcc-agent.sh"
-},
+}
 
 
