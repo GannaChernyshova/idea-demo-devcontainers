@@ -21,7 +21,7 @@ target/
 mutagen-daemon.log
 tcc-agent.log
 tcc-agent
-.env
+.devcontainer/devcontainer.env
 
 ### NetBeans ###
 /nbproject/private/

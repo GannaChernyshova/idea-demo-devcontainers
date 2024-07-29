@@ -80,4 +80,4 @@ if [ -z "$TC_CLOUD_TOKEN" ] && ! grep -q 'cloud.token' ~/.testcontainers.propert
 fi
 
 say "Launching ${b}${TCC_BINARY_NAME}${x} with nohup..."
-nohup ./"${TCC_BINARY_NAME}" --token "$TC_CLOUD_TOKEN" > tcc-agent.log 2>&1 &
+nohup ./"${TCC_BINARY_NAME}" > tcc-agent.log 2>&1 &
